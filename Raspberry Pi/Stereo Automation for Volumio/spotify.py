@@ -1,3 +1,5 @@
+# Script partly taken from https://github.com/Schnouki/spop/tree/master/dspop
+# This script is meant to work only with spop (which is actually the Spotify service running on Volumio)
 
 import json
 import socket
