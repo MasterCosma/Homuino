@@ -42,6 +42,9 @@ def do_something(command, uri=""):
             disabled = 1
             GPIO.output(26, True)
             print("Check routine disabled")
+            if previous_status == 0:
+                onoff("on")
+                open("minutes.txt", 'w+').write("0\n")
 
 stdout_ = sys.stdout
 sys.stdout = open("auto_off.log", 'a', buffering=0)
